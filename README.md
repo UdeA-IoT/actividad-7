@@ -7,6 +7,8 @@ Repo clase 7
 2. Hacerla en el ejemplo 1 del esp8266
 3. Traducir lo siguiente:
 
+<!---
+
 
 Nota: Para la escrutyra del documento sustraer la información basica adaptando lo que se hace cuando se adapta algo usando el arduino cloud iot.
 
@@ -177,6 +179,9 @@ https://dweet.io/follow/node001
 
 6. Leer A0 del esp8266, conectarse a la web y mandar el resultado deet..
 
+
+
+
 Resumen del proceso con: https://www.learnrobotics.org/blog/how-to-use-dweet-io-with-wemos-d1-mini-arduino-tutorial/
 https://www.learnrobotics.org/blog/four-steps-to-writing-an-arduino-program/
 https://www.learnrobotics.org/
@@ -230,7 +235,7 @@ Ver:
 
 https://www.learnrobotics.org/blog/connect-arduino-to-ifttt-for-iot-projects/
 
-
+-->
 
 ## Herramientas:
 
@@ -258,3 +263,4 @@ https://www.learnrobotics.org/blog/connect-arduino-to-ifttt-for-iot-projects/
 10. https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
 11. http://devices.webofthings.io/
 12. https://blog.postman.com/tag/tutorials/
+13. https://www.w3.org/WoT/documentation/
