@@ -33,7 +33,7 @@ El [Postman](https://www.postman.com/) es una aplicación que permite la realiza
 
 El siguiente ejemplo fue tomado del siguiente [link](https://github.com/tamberg/fhnw-iot/blob/master/03/Arduino/ESP8266_WiFiClient/ESP8266_WiFiClient.ino)
 
-* **Codigo**: [ejemplo1.ino](ejemplo1.ino)
+* **Codigo**: [ejemplo1.ino](ejemplo1.ino). (**Nota**: No olvidar modificar el ejemplo de acuerdo a los parametros de su red local).
 
 ```arduino
 #include <ESP8266WiFi.h>
@@ -116,6 +116,11 @@ void setupWiFi()
 El resultado de ejecutar el código anterior en el arduino se muestra en:
 
 ![salida-serial](salida-serial.png)
+
+## Conclusión
+
+Como se puede ver de los ejemplos anteriormente realizados, es posible usar el arduino como un cliente web lo cual permite que este pueda comunicarse con cualquier plataforma IoT empleando cualquier API definida. En el suguiente ejemplo vamos a explorar un caso de uso.
+
 
 
 
