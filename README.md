@@ -1,7 +1,24 @@
-# actividad-7
-Repo clase 7
+# Actividad de laboratorio 7
 
-(resumen)
+> ## Objetivos
+> Hacer una primera exploración sobre el uso de APIs para conectar cosas.
+> Explorar el uso basico de la herramienta NodeRED.
+
+## Recomendaciones
+
+Antes de empezar se recomienda dar una revisada a los siguientes enlaces:
+1. [Adafruit IO](https://learn.adafruit.com/adafruit-io/rest-api)
+2. [IoTuesday: Using Yahoo's Weather API](https://www.sparkfun.com/news/2379)
+3. [IoT Engineering - https://github.com/tamberg/fhnw-iot/tree/master/03](https://github.com/tamberg/fhnw-iot/tree/master/03)
+4. [Solicitudes de API REST](https://github.com/UdeA-IoT/actividad-6#solicitudes-de-api-rest)
+
+## Conceptos importantes
+
+
+
+
+## Ejemplos
+
 
 1. Hacer la peticion get con el postman del hello.
 2. Hacerla en el ejemplo 1 del esp8266
