@@ -11,16 +11,49 @@ Antes de empezar se recomienda dar una revisada a los siguientes enlaces:
 2. [IoTuesday: Using Yahoo's Weather API](https://www.sparkfun.com/news/2379)
 3. [IoT Engineering - https://github.com/tamberg/fhnw-iot/tree/master/03](https://github.com/tamberg/fhnw-iot/tree/master/03)
 4. [Solicitudes de API REST](https://github.com/UdeA-IoT/actividad-6#solicitudes-de-api-rest)
+5. [Guía práctica para la publicación de Datos Abiertos usando APIs](https://datos.gob.es/es/documentacion/guia-practica-para-la-publicacion-de-datos-abiertos-usando-apis)
 
-## Conceptos importantes
+## Plataformas IoT
 
+Hasta el momento hemos visto los siguientes temas:
+1. Conceptos basicos de programación de las sistemas de desarrollo Arduino UNO y NodeMCU.
+2. Algunos conceptos basicos entre sensores y actuadores.
+3. Comunicación serial.
+4. Comunicación inalambrica usando Wifi.
 
+De los temas anteriormente vistos es importante resaltar la importancia que juega la comunicación en una arquitectura IoT, asi mismo, que estas no son las unicas maneras de hacer trabajar con datos, sin embargo, con saber por ahora esto basta.
 
+Tal y como se muestra en la siguiente figura (tomada de [IoT Engineering - https://github.com/tamberg/fhnw-iot/tree/master/03](https://github.com/tamberg/fhnw-iot/tree/master/03))
+
+![IoT-reference-model](Iot-reference-model.png)
+
+En el modelo de referencia IoT, uno de los elementos claves son las plataformas IoT pues permiten almacenar y almacenar (entre otras cosas) datos de sensores. Para conectar las cosas con estas plataformas con las cosas, es importante conocer la forma como se lleva a cabo la comunicación y la interación establecida por estas la cual, generalmente es a traves de peticiones HTTP expuestas a traves de APIs. 
+
+Respecto al manejo de APIs, un documento muy bueno que explica esto se muestra en el resumen [APIs
+para Datos Abiertos](references/cheatsheet_api.pdf).
+
+## Sensado remoto
+
+El sensado remoto permite que las cosas envien datos a una plataforma en la nube. A continuación se resumen los pasos que casi siempre se llevan a cabo de manera general para hacer esta tarea:
+1. Asegurar que el dispositivo este conectado a la red wifi.
+2. Leer los valores de los sensores (al leer valores, es importar agregar un timestamp (UTC) para conocer el momento en el que se hizo la medición).
+3. Enviar los valores al backend.
+
+Es importante recordar los pasos basicos para conectar el dispositivo (NodeMCU en nuestro caso) de modo que le recomendamos que de una rapida mirada al documento [3 Steps to Connect an ESP8266 to WiFi for IoT Projects](https://www.learnrobotics.org/blog/connect-esp8266-wifi/)
+
+A continuación se muestran algunas de las plataformas disponibles para enviar y desplegar facilmente datos en la red:
+1. https://dweet.io/faq
+2. https://platform.favoriot.com/v2/login
+3. https://ubidots.com/
+4. https://docs.arduino.cc/cloud/iot-cloud
+5. https://www.thethingsnetwork.org/
+6. https://thethings.io/
 
 ## Ejemplos
 
+Con el fin de familiarizarnos un poco con el material teorico previamente presentado vamos a analizar una serie de ejemplos (recopilados de internet) que puede ser de utilidad entender si se desea conectar cosas en una plataforma IoT
 
-1. Hacer la peticion get con el postman del hello.
+1. Haciendo una peticiones Web.
 2. Hacerla en el ejemplo 1 del esp8266
 3. Traducir lo siguiente:
 
@@ -257,12 +290,7 @@ https://www.learnrobotics.org/blog/connect-arduino-to-ifttt-for-iot-projects/
 ## Herramientas:
 
 
-1. https://dweet.io/faq
-2. https://platform.favoriot.com/v2/login
-3. https://ubidots.com/
-4. https://docs.arduino.cc/cloud/iot-cloud
-5. https://www.thethingsnetwork.org/
-6. https://thethings.io/
+
 
 
 
