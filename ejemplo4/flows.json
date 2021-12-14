@@ -1,0 +1,144 @@
+[
+    {
+        "id": "955513976f8e20f7",
+        "type": "tab",
+        "label": "AnalogSerial",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "43a358385e1bb476",
+        "type": "debug",
+        "z": "955513976f8e20f7",
+        "name": "Valor Sensor",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ed295ffe5537cdad",
+        "type": "serial in",
+        "z": "955513976f8e20f7",
+        "name": "sensor",
+        "serial": "fbe7cabfd61ab0d8",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "43a358385e1bb476",
+                "744237f679591b20"
+            ]
+        ]
+    },
+    {
+        "id": "706c99850f55909a",
+        "type": "ui_gauge",
+        "z": "955513976f8e20f7",
+        "name": "",
+        "group": "461f1b38cfe7fa1a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Valor del Sensor",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "256",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "744237f679591b20",
+        "type": "function",
+        "z": "955513976f8e20f7",
+        "name": "escalado",
+        "func": "msg.payload = Number(msg.payload)/4;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "4e5a3bb0e980406c",
+                "706c99850f55909a"
+            ]
+        ]
+    },
+    {
+        "id": "4e5a3bb0e980406c",
+        "type": "debug",
+        "z": "955513976f8e20f7",
+        "name": "Valor sensor escalado",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fbe7cabfd61ab0d8",
+        "type": "serial-port",
+        "serialport": "COM6",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "461f1b38cfe7fa1a",
+        "type": "ui_group",
+        "name": "Analog Serial",
+        "tab": "cab8342da49a0e37",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cab8342da49a0e37",
+        "type": "ui_tab",
+        "name": "Home 2",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
